@@ -1,0 +1,24 @@
+<div class="w-full  mx-auto flex flex-col h-dvh bg-[#FFFFFF] overflow-hidden">
+  <h1 class=" text-9xl  font-semibold">Trip</h1>
+  <form [formGroup]="registrationForm" action="" class="flex flex-wrap mt-14 w-full max-w-screen-xl">
+    <h3>Электронная почта</h3>
+    <div class="max-w-xl relative flex flex-row justify-between  bg-[#D9D9D9] rounded-2xl ">
+      <input formControlName="email" type="mail" placeholder="Почта" class="p-2.5 bg-[#D9D9D9] rounded-2xl text-black outline-none">
+    </div>
+    <h3>Роль</h3>
+    <div class="max-w-xl relative flex flex-row justify-between  bg-[#D9D9D9] rounded-2xl ">
+      <input formControlName="password" type="password" placeholder="Введите пароль" class="p-2.5 bg-[#D9D9D9] text-black  rounded-2xl outline-none">
+    </div>
+    <h3>Пароль</h3>
+    <div class="max-w-xl relative flex flex-row justify-between  bg-[#D9D9D9] rounded-2xl ">
+      <input formControlName="avatar" type=" text" placeholder="Введите ссылку на аватар" class="p-2.5 bg-[#D9D9D9] text-black  rounded-2xl outline-none">
+    </div>
+    <h3>Имя и фамилия</h3>
+    <div class="max-w-xl relative flex flex-row justify-between  bg-[#D9D9D9] rounded-2xl ">
+      <input formControlName="first_name" type=" text" placeholder="Введите имя" class="p-2.5 bg-[#D9D9D9] text-black  rounded-2xl outline-none">
+    </div>
+
+    <button (click)="submit()" class="mt-10 px-5 py-2 text-center max-w-72 bg-[#000000] text-[#FFFFFF] text-2xl rounded-2xl font-semibold">Регистрация</button>
+
+  </form>
+</div>
