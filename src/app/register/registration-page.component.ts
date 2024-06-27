@@ -3,7 +3,6 @@ import { AuthService } from '../autentication.service';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { User } from '../interfaces';
 
 @Component({
   selector: 'app-registration-page',
@@ -13,7 +12,7 @@ import { User } from '../interfaces';
   styleUrl: './registration-page.component.css'
 })
 export class RegistrationPageComponent {
-  public registerObg: User = {
+  public registerObg: any = {
     email: "",
     password: ""
   }

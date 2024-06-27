@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { RegistrationPageComponent } from './registration-page/registration-page.component';
+import { RegistrationPageComponent } from './register/registration-page.component';
 import { DetailPageComponent } from './detail-page/detail-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { authGuard } from './auth.guard';
